@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500" height="400">
+    <defs>
+        <pattern id="tile1" patternUnits="objectBoundingBox"  x="0" y="0" width=".2" height=".2" patternContentUnits="objectBoundingBox">
+            <path d="M 0 0 Q .05 .20 .10 .10 T .20 .20" style="stroke: black; fill: none; stroke-width: .01;"></path>
+            <path d="M 0 0 h .20 v .20 h-.20z" style="stroke: black; fill: none; stroke-width: .01;"></path>
+        </pattern>
+        <pattern id="tile2" patternUnits="objectBoundingBox"  x="0" y="0" width=".2" height=".2" viewBox="0 0 20 20" preserveAspectRatio="none">
+            <path d="M 0 0 Q 5 20 10 10 T 20 20" style="stroke: black; fill: none; stroke-width: 1;"></path>
+            <path d="M 0 0 h 20 v 20 h-20z" style="stroke: black; fill: none; stroke-width: 1;"></path>
+        </pattern>
+        <pattern id="tile3" patternUnits="objectBoundingBox"  x="0" y="0" width=".2" height=".2" preserveAspectRatio="userSpaceOnUse">
+            <path d="M 0 0 Q 5 20 10 10 T 20 20" style="stroke: black; fill: none; stroke-width: 1;"></path>
+            <path d="M 0 0 h 20 v 20 h-20z" style="stroke: black; fill: none; stroke-width: 1;"></path>
+        </pattern>
+    </defs>
+    <g transform="translate(20,20)">
+        <rect x="0" y="0" width="100" height="100" style="fill: url(#tile1  ); stroke: black;"></rect>
+    </g>
+    <g transform="translate(135,20)">
+        <rect x="0" y="0" width="70" height="80" style="fill: url(#tile1); stroke: black;"></rect>
+    </g>
+    <g transform="translate(220,20)">
+        <rect x="0" y="0" width="150" height="80" style="fill: url(#tile1); stroke: black;"></rect>
+    </g>
+</svg>
+<svg width="500" height="400">
+    <g transform="translate(20,20)">
+        <rect x="0" y="0" width="100" height="100" style="fill: url(#tile2); stroke: black;"></rect>
+    </g>
+    <g transform="translate(135,20)">
+        <rect x="0" y="0" width="70" height="80" style="fill: url(#tile2); stroke: black;"></rect>
+    </g>
+    <g transform="translate(220,20)">
+        <rect x="0" y="0" width="150" height="80" style="fill: url(#tile2); stroke: black;"></rect>
+    </g>
+</svg>
+<svg width="500" height="400">
+    <g transform="translate(20,20)">
+        <rect x="0" y="0" width="100" height="100" style="fill: url(#tile3); stroke: black;"></rect>
+    </g>
+    <g transform="translate(125,20)">
+        <rect x="0" y="0" width="70" height="80" style="fill: url(#tile3); stroke: black;"></rect>
+    </g>
+    <g transform="translate(200,20)">
+        <rect x="0" y="0" width="150" height="80" style="fill: url(#tile3); stroke: black;"></rect>
+    </g>
+</svg>
+</body>
+</html>

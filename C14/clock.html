@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg id="clock" width="500" height="500" viewBox="0 0 250 250">
+</svg>
+<script>
+    var clock = document.getElementById("clock");
+
+    function init() {
+        var svgs = clock.namespaceURI,
+            doc = document;
+
+//        clock.suspendRedraw(1000);
+
+        var face = doc.createElementNS(svgs, 'circle');
+        face.cx.baseVal.value = 125;
+        face.cy.baseVal.value = 125;
+        face.r.baseVal.value = 100;
+        face.style.cssText = "fill: none; stroke: black";
+        clock.appendChild(face);
+
+//        clock.unsuspendRedraw();
+
+
+    }
+
+    clock.addEventListener("load", init);
+
+
+</script>
+</body>
+</html>

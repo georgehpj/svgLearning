@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500" height="500">
+    <defs>
+        <path id="circle" d="M70 20a40 40 0 1 1 -1 0"></path>
+        <path id="semi" d="M200 100a50 50 0 1 1 100 0"></path>
+    </defs>
+    <text>
+        <textPath xlink:href="#circle">
+            Text following a circle.............
+        </textPath>
+    </text>
+    <use xlink:href="#semi" stroke="grey" fill="none"></use>
+    <text text-anchor="middle">
+        <textPath xlink:href="#semi" startOffset="50%">
+            Middle
+        </textPath>
+    </text>
+</svg>
+</body>
+</html>

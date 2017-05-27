@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <svg width="200" height="400" viewBox="0 0 140 180" preserveAspectRatio="xMidYMin meet" style="border: 1px solid;">
+        <g id="cat">
+            <polyline points="108 62, 90 10, 70 45, 50 10, 32 62" stroke="black" fill="black"></polyline>
+            <circle cx="70" cy="95" r="50" style="stroke: black; fill: white"></circle>
+            <circle cx="55" cy="80" r="7" style="stroke: black; fill: #393"></circle>
+            <circle cx="85" cy="80" r="7" style="stroke: black; fill: #393"></circle>
+            <g id="whisker">
+                <line x1="75" y1="100" x2="135" y2="95" stroke="black"></line>
+                <line x1="75" y1="100" x2="135" y2="110" stroke="black"></line>
+            </g>
+            <use xlink:href="#whisker" transform="scale(-1, 1) translate(-140, 0)"></use>
+            <polyline points="35, 110, 45, 120, 95, 120, 105, 110" stroke="black" fill="none"></polyline>
+            <path d="M 75 95 L 65 95 A 5 10 0 0 0 75 95" stroke="black" fill="#fcc"></path>
+            <text x="60" y="165" font-family="sans-serif" font-size="14px" stroke="none" fill="black">Cat</text>
+        </g>
+    </svg>
+    <svg width="200" height="400" viewBox="0 0 140 180" preserveAspectRatio="xMidYMid meet" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="200" height="400" viewBox="0 0 140 180" preserveAspectRatio="xMidYMax meet" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="400" height="200" viewBox="0 0 140 180" preserveAspectRatio="xMinYMax meet" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="400" height="200" viewBox="0 0 140 180" preserveAspectRatio="xMidYMax meet" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="400" height="200" viewBox="0 0 140 180" preserveAspectRatio="xMaxYMax meet" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+</div>
+<div>
+    <svg width="200" height="400" viewBox="0 0 140 180" preserveAspectRatio="xMinYMid slice" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="200" height="400" viewBox="0 0 140 180" preserveAspectRatio="xMidYMin slice" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="200" height="400" viewBox="0 0 140 180" preserveAspectRatio="xMaxYMax slice" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="400" height="200" viewBox="0 0 140 180" preserveAspectRatio="xMinYMin slice" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="400" height="200" viewBox="0 0 140 180" preserveAspectRatio="xMidYMid slice" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="400" height="200" viewBox="0 0 140 180" preserveAspectRatio="xMaxYMax slice" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+</div>
+<div>
+    <svg width="200" height="400" viewBox="0 0 140 180" preserveAspectRatio="none" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+    <svg width="400" height="200" viewBox="0 0 140 180" preserveAspectRatio="none" style="border: 1px solid;">
+        <use xlink:href="#cat"></use>
+    </svg>
+</div>
+</body>
+</html>

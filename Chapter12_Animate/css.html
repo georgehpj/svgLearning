@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    @keyframes change {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(90deg);
+        }
+    }
+    div{
+        animation-name: change;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-fill-mode: both;
+        animation-direction: alternate-reverse;
+        animation-play-state: running;
+    }
+    div:hover{
+        animation-play-state: paused;
+    }
+</style>
+<div style="width: 100px;height: 100px;background-color: red;position: relative; top: 100px; left: 100px;"></div>
+</body>
+</html>

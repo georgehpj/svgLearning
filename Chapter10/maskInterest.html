@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg height="300" width="500">
+    <defs>
+        <mask id="cat" x="0" y="0" height="200" width="400" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="400" height="200" fill="#fff" opacity="0.5"></rect>
+            <path d="m100 100a50 40 0 1 0 100 0Q200 00 170 30Q150 50 130 30Q100 0 100 100" fill="#fff" opacity="1"></path>
+        </mask>
+    </defs>
+    <image xlink:href="Jellyfish.jpg" x="70" y="0" height="170" width="300" preserveAspectRatio="none" style="mask:url(#cat)"></image>
+</svg>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500" height="500">
+    <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blue"></feGaussianBlur>
+        <feOffset in="blur" dx="2" dy="2" result="offsetBlur"></feOffset>
+        <feMerge>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+            <feMergeNode in="offsetBlur"></feMergeNode>
+        </feMerge>
+    </filter>
+    <filter id="drop-shadow2">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blue"></feGaussianBlur>
+        <feOffset in="blur" dx="0" dy="0" result="offsetBlur"></feOffset>
+        <feMerge>
+            <feMergeNode in="SourceGraphic"></feMergeNode>
+            <feMergeNode in="offsetBlur"></feMergeNode>
+        </feMerge>
+    </filter>
+    <g filter="url(#drop-shadow)">
+        <use xlink:href="house.svg#house"></use>
+    </g>
+    <g filter="url(#drop-shadow2)">
+        <text x="100" y="50">TEXT</text>
+    </g>
+</svg>
+</body>
+</html>

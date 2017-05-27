@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <svg width="140" height="170"
+         xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Cat</title>
+        <desc>Stick Figure of a Cat</desc>
+
+        <polyline points="108 62, 90 10, 70 45, 50 10, 32 62" stroke="black" fill="black"></polyline>
+        <circle cx="70" cy="95" r="50" style="stroke: black; fill: white"></circle>
+        <circle cx="55" cy="80" r="7" style="stroke: black; fill: #393"></circle>
+        <circle cx="85" cy="80" r="7" style="stroke: black; fill: #393"></circle>
+        <g id="whisker">
+            <line x1="75" y1="100" x2="135" y2="95" stroke="black"></line>
+            <line x1="75" y1="100" x2="135" y2="110" stroke="black"></line>
+        </g>
+        <use xlink:href="#whisker" transform="scale(-1, 1) translate(-140, 0)"></use>
+        <polyline points="35, 110, 45, 120, 95, 120, 105, 110" stroke="black" fill="none"></polyline>
+        <path d="M 75 95 L 65 95 A 5 10 0 0 0 75 95" stroke="black" fill="#fcc"></path>
+        <text x="60" y="165" font-family="sans-serif" font-size="14px" stroke="none" fill="black">Cat</text>
+    </svg>
+</body>
+</html>

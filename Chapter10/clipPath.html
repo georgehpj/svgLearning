@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500" height="500">
+    <defs>
+        <clipPath id="clip">
+            <path d="m100 100a50 40 0 1 0 100 0Q200 00 170 30Q150 50 130 30Q100 0 100 100"></path>
+        </clipPath>
+        <linearGradient id="linear" x1="0.3" y1="0.3" x2=".7" y2=".7" spreadMethod="reflect">
+            <stop offset="0" stop-color="#00F"></stop>
+            <stop offset="1" stop-color="#FF0"></stop>
+        </linearGradient>
+    </defs>
+    <rect x="0" y="0" height="200" width="200" fill="url(#linear)" style="clip-path: url(#clip)"></rect>
+</svg>
+<svg width="500" height="500">
+    <defs>
+        <clipPath id="textClip">
+            <text x="50" y="30" transform="rotate(45)" style="font-weight: bold">Text Colorful Clip</text>
+        </clipPath>
+        <linearGradient id="linear" x1="0.3" y1="0.3" x2=".7" y2=".7" spreadMethod="reflect">
+            <stop offset="0" stop-color="#00F"></stop>
+            <stop offset="1" stop-color="#FF0"></stop>
+        </linearGradient>
+    </defs>
+    <rect x="0" y="0" height="200" width="200" fill="url(#linear)" style="clip-path: url(#textClip)"></rect>
+</svg>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg height="500" width="500">
+    <path d="M50 50v50h50v-50z" fill="none" stroke="black">
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" additive="sum" to="20 20" begin="0" dur="2" fill="freeze"></animateTransform>
+        <animateTransform attributeName="transform" attributeType="XML" type="scale" additive="sum" from="1" to="2" begin="0" dur="2" fill="freeze"></animateTransform>
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" additive="sum" from="0 75 75" to="45 75 75" begin="0" dur="2"  fill="freeze"></animateTransform>
+    </path>
+</svg>
+<svg style="overflow: visible">
+    <rect x="-10" y="-10" width="20" height="20" style="fill: #ff9; stroke: black;">
+        <animateTransform id="a1" attributeName="transform" attributeType="XML" type="scale" from="1" to="4 2" additive="sum" begin="0s" dur="4s" fill="remove"></animateTransform>
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="45" additive="sum" begin="0" dur="2s" fill="remove"></animateTransform>
+    </rect>
+</svg>
+</body>
+</html>

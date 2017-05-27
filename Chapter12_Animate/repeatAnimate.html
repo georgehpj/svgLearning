@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg>
+    <circle cx="75" cy="75" r="20" fill="red">
+        <animate attributeName="r"
+                 attributeType="XML"
+                 values="20;50;20"
+                 begin="0" dur="2" repeatDur="0.5"
+
+                 fill="freeze"></animate>
+    </circle>
+    <circle cx="175" cy="75" r="20" fill="red">
+        <animate attributeName="r"
+                 attributeType="XML"
+                 values="20;50;20"
+                 keyTimes="0;.15;1"
+                 calcMode="spline"  keySplines=".5 0 .5 1;.5 0 .5 1"
+                 begin="0" dur="1" repeatCount="indefinite"
+                 fill="freeze"></animate>
+    </circle>
+</svg>
+<svg>
+    <polygon points="30 30 70 30 90 70 10 70"
+             style="fill:#fcc; stroke:black">
+        <animate id="animation"
+                 attributeName="points"
+                 attributeType="XML"
+                 to="50 30 70 50 50 90 30 50"
+                 begin="0s" dur="5s" fill="freeze"></animate>
+    </polygon>
+    <path d="M15 50 Q 40 15, 50 50T100 40"
+          style="fill:none; stroke: black" transform="translate(0,50)">
+        <animate attributeName="d"
+                 attributeType="XML"
+                 to="M50 15 Q 15 40, 50 50T40 100"
+                 begin="0s" dur="5s" fill="freeze"></animate>
+    </path>
+</svg>
+<svg>
+    <circle cx="60" cy="60" r="15"
+            style="fill: none; stroke: red;">
+        <animate id="circleAnim" attributeName="cx" attributeType="XML"
+                 begin="0s" dur="3s" repeatCount="3"
+                 from="60" to="260" fill="freeze"/>
+    </circle>
+    <rect x="230" y="80" width="30" height="30"
+          style="fill: #ccf; stroke: black;">
+        <animate attributeName="x" attributeType="XML"
+                 begin="circleAnim.repeat(1)+1.5s" dur="5s"
+                 from="230" to="30" fill="freeze"/>
+    </rect>
+</svg>
+</body>
+</html>

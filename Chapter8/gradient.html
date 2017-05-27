@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500">
+    <defs>
+        <radialGradient id="radial" gradientTransform="translate(.2,.2)">
+            <stop offset="0" stop-color="grey"></stop>
+            <stop offset="1" stop-color="grey" stop-opacity="0"></stop>
+        </radialGradient>
+        <radialGradient id="radial2" gradientTransform="translate(.375,.375) scale(.25) ">
+            <stop offset="0" stop-color="grey"></stop>
+            <stop offset="1" stop-color="grey" stop-opacity="0"></stop>
+        </radialGradient>
+        <radialGradient id="radial3" gradientTransform="translate(0,.25) scale(.5) skewX(45)">
+            <stop offset="0" stop-color="grey"></stop>
+            <stop offset="1" stop-color="grey" stop-opacity="0"></stop>
+        </radialGradient>
+    </defs>
+    <rect x="0" y="0" height="100" width="100" fill="url(#radial)" stroke="grey"></rect>
+    <rect x="110" y="0" height="100" width="100" fill="url(#radial2)" stroke="grey"></rect>
+    <rect x="220" y="0" height="100" width="100" fill="url(#radial3)" stroke="grey"></rect>
+</svg>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<svg>
+    <rect id="rect" x="2em" y="3rem" height="100" width="30rem" fill="none" stroke="red"></rect>
+</svg>
+
+<script>
+    var rect = document.getElementById("rect");
+    console.log(rect.x.baseVal.value);
+    console.log(rect.y.baseVal.valueAsString);
+</script>
+</body>
+</html>

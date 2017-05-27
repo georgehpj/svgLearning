@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg>
+
+    <g id="coordinates" fill="none" stroke="black" stroke-width="1">
+        <path d="M10 0v30h200m-190 0v30h190m-180 0v30h180"></path>
+    </g>
+    <g id="text" font-size="2rem">
+        <text x="10" y="30">first line
+            <tspan x="20" y="60">second line</tspan>
+            <tspan x="30" dy="30">third line</tspan>
+        </text>
+    </g>
+</svg>
+<svg width="500">
+    <text x="30" y="30" font-size="2rem">It’s
+        <tspan dx="0,4,-3,5,-4 6" dy="0 -3 7 3 -2 -8"
+               rotate="5 10 -5 -20 0 15">shaken</tspan>,
+        not stirred.
+    </text>
+</svg>
+<svg width="500">
+    <text x="20" y="25" style="font-size: 1.5rem;">
+        C<tspan style="baseline-shift: sub;font-size: 1rem;">12</tspan>
+        H<tspan style="baseline-shift: sub;font-size: 1rem">22</tspan>
+        O<tspan style="baseline-shift: sub;font-size: 1rem">11</tspan> (sugar)
+    </text>
+    <text x="20" y="70" style="font-size: 1.5rem;">
+        6.02 x 10<tspan baseline-shift="super" style="font-size:1rem">23</tspan>
+        (Avogadro's number)
+    </text>
+</svg>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500" height="400">
+    <filter id="over">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feComposite operator="over" in="SourceGraphic" in2="offsetBlur"></feComposite>
+    </filter>
+    <filter id="in">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feComposite operator="in" in="offsetBlur" in2="SourceGraphic"></feComposite>
+    </filter>
+    <filter id="out">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feComposite operator="out" in="SourceGraphic" in2="offsetBlur"></feComposite>
+    </filter>
+    <filter id="atop">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feComposite operator="atop" in="SourceGraphic" in2="offsetBlur"></feComposite>
+    </filter>
+    <filter id="xor">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feComposite operator="xor" in="SourceGraphic" in2="offsetBlur"></feComposite>
+    </filter>
+    <filter id="normal">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feBlend mode="normal" in="SourceGraphic" in2="offsetBlur"></feBlend>
+    </filter>
+    <filter id="normal">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feBlend mode="normal" in="SourceGraphic" in2="offsetBlur"></feBlend>
+    </filter>
+    <filter id="multiply">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feBlend mode="multiply" in="SourceGraphic" in2="offsetBlur"></feBlend>
+    </filter>
+    <filter id="screen">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feBlend mode="screen" in="SourceGraphic" in2="offsetBlur"></feBlend>
+    </filter>
+    <filter id="darken">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feBlend mode="darken" in="SourceGraphic" in2="offsetBlur"></feBlend>
+    </filter>
+    <filter id="lighten">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"></feGaussianBlur>
+        <feOffset in="blur" dx="1" dy="1" result="offsetBlur"></feOffset>
+        <feBlend mode="lighten" in="SourceGraphic" in2="offsetBlur"></feBlend>
+    </filter>
+
+    <text x="0" y="25" filter="url(#over)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">OVER</text>
+    <text x="0" y="50" filter="url(#in)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">IN</text>
+    <text x="0" y="75" filter="url(#out)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">OUT</text>
+    <text x="0" y="100" filter="url(#atop)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">ATOP</text>
+    <text x="0" y="125" filter="url(#xor)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">XOR</text>
+
+    <text x="100" y="25" filter="url(#normal)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">NORMAL</text>
+    <text x="100" y="50" filter="url(#multiply)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">MULTIPLY</text>
+    <text x="100" y="75" filter="url(#screen)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">SCREEN</text>
+    <text x="100" y="100" filter="url(#darken)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">DARKEN</text>
+    <text x="100" y="125" filter="url(#lighten)" style="font-weight: bold; font-size:20px;font-family: 'Microsoft YaHei'; fill:red">LIGHTEN</text>
+</svg>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+    <g id="house" style="fill: none; stroke: red;">
+        <desc>House with door</desc>
+        <rect x="6" y="50" width="60" height="60" stroke="black"/>
+        <polyline points="6 50, 36 9, 66 50"/>
+        <polyline points="36 110, 36 80, 50 80, 50 110"/>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500" height="800">
+    <defs>
+        <mask id="red" x="0" y="0" width="1" height="1" maskContentUnits="objectBoundingBox">
+            <rect x="0" y="0" height="1" width="1" fill="#f00"></rect>
+        </mask>
+        <mask id="green" x="0" y="0" width="1" height="1" maskContentUnits="objectBoundingBox">
+            <rect x="0" y="0" height="1" width="1" fill="#0f0"></rect>
+        </mask>
+        <mask id="blue" x="0" y="0" width="1" height="1" maskContentUnits="objectBoundingBox">
+            <rect x="0" y="0" height="1" width="1" fill="#00f"></rect>
+        </mask>
+        <mask id="white" x="0" y="0" width="1" height="1" maskContentUnits="objectBoundingBox">
+            <rect x="0" y="0" height="1" width="1" fill="#fff" opacity="0.7154"></rect>
+        </mask>
+        <mask id="white2" x="0" y="0" width="1" height="1" maskContentUnits="objectBoundingBox">
+            <rect x="0" y="0" height="1" width="1" fill="rgba(255,255,255,0.2125)"></rect>
+        </mask>
+        <mask id="white3" x="0" y="0" width="1" height="1" maskContentUnits="objectBoundingBox">
+            <rect x="0" y="0" height="1" width="1" fill="rgba(255,255,255,0.0721)"></rect>
+        </mask>
+    </defs>
+    <image xlink:href="Jellyfish.jpg" x="0" y="0" height="200" width="230" preserveAspectRatio="xMidYMid meet" style="mask:url(#white)"></image>
+    <image xlink:href="Jellyfish.jpg" x="240" y="0" height="200" width="230" preserveAspectRatio="xMidYMid meet" style="mask:url(#green)"></image>
+    <image xlink:href="Jellyfish.jpg" x="0" y="210" height="200" width="230" preserveAspectRatio="xMidYMid meet" style="mask:url(#white2)"></image>
+    <image xlink:href="Jellyfish.jpg" x="240" y="210" height="200" width="230" preserveAspectRatio="xMidYMid meet" style="mask:url(#red)"></image>
+    <image xlink:href="Jellyfish.jpg" x="0" y="420" height="200" width="230" preserveAspectRatio="xMidYMid meet" style="mask:url(#white3)"></image>
+    <image xlink:href="Jellyfish.jpg" x="240" y="420" height="200" width="230" preserveAspectRatio="xMidYMid meet" style="mask:url(#blue)"></image>
+</svg>
+<svg>
+    <defs>
+        <mask id=""></mask>
+    </defs>
+</svg>
+</body>
+</html>

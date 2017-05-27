@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg height="300" width="800">
+    <defs>
+        <radialGradient id="radial">
+            <stop offset="0" stop-color="grey"></stop>
+            <stop offset="1" stop-color="grey" stop-opacity="0"></stop>
+        </radialGradient>
+        <radialGradient id="radial2" cx="0" cy="0" r="1.2">
+            <stop offset="0" stop-color="grey"></stop>
+            <stop offset="1" stop-color="grey" stop-opacity="0"></stop>
+        </radialGradient>
+        <radialGradient id="radial3" cx=".5" cy=".5" fx=".8" fy=".8">
+            <stop offset="0.1" stop-color="grey" stop-opacity="0"></stop>
+            <stop offset="1" stop-color="grey"></stop>
+        </radialGradient>
+        <radialGradient id="radial4" fx=".5" fy=".5" gradientTransform="translate(.1,.1)">
+            <stop offset="0.1" stop-color="grey" stop-opacity="0"></stop>
+            <stop offset="1" stop-color="grey"></stop>
+        </radialGradient>
+    </defs>
+    <circle r="75" cx="100" cy="100" fill="url(#radial)"></circle>
+    <rect x="200" y="25" width="150" height="150" fill="url(#radial2)"></rect>
+    <circle r="75" cx="450" cy="100" fill="url(#radial3)"></circle>
+    <circle r="75" cx="620" cy="100" fill="url(#radial4)"></circle>
+</svg>
+<svg height="300">
+</svg>
+<svg height="300">
+    <defs>
+    </defs>
+</svg>
+</body>
+</html>

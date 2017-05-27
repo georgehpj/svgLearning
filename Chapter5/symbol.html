@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg>
+    <g id="sym-octagon" >
+        <desc>Octagon as symbol</desc>
+        <polygon points="36 25, 25 36, 11 36, 0 25,0 11, 11 0, 25 0, 36 11"></polygon>
+    </g>
+    <symbol id="sym-octagon2" preserveAspectRatio="xMinYMin meet" viewBox="0 0 36 36">
+        <desc>Octagon as symbol</desc>
+        <polygon points="36 25, 25 36, 11 36, 0 25,0 11, 11 0, 25 0, 36 11"></polygon>
+    </symbol>
+
+    <g stroke="#777" fill="none">
+        <rect height="50" width="40"></rect>
+        <rect height="50" width="30" x="100"></rect>
+        <rect height="50" width="50" y="100"></rect>
+        <rect height="50" width="30" x="100" y="100"></rect>
+    </g>
+
+    <use xlink:href="#sym-octagon" fill="#aae" width="30" height="50" x="100"></use>
+
+    <use xlink:href="#sym-octagon2" fill="#aea" width="50" height="50" y="100"></use>
+    <use xlink:href="#sym-octagon2" fill="#777" width="30" height="50" x="100" y="100"></use>
+</svg>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg height="500" width="500">
+    <text text-anchor="middle" x="60" y="60" style="visibility: hidden;">
+        <set attributeName="visibility" attributeType="CSS"
+             to="visible" begin="1s" dur="2s" fill="freeze"></set>
+        <set attributeName="x" attributeType="XML"
+             to="120" begin="2s" dur="1s" fill="freeze"></set>
+        All gone!
+    </text>
+    <circle cx="150" cy="150" r="20" fill="red">
+        <set attributeName="r" attributeType="XML" to="50" begin="1s" dur="2s" fill="remove"></set>
+    </circle>
+</svg>
+</body>
+</html>

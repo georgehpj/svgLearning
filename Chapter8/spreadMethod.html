@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<svg width="500">
+    <defs>
+        <linearGradient id="linear" x1="0.3" y1="0.3" x2=".7" y2=".7" >
+            <stop offset="0" stop-color="#00F"></stop>
+            <stop offset="1" stop-color="#FF0"></stop>
+        </linearGradient>
+        <linearGradient id="linear2" x1="0.3" y1="0.3" x2=".7" y2=".7" spreadMethod="repeat">
+            <stop offset="0" stop-color="#00F"></stop>
+            <stop offset="1" stop-color="#FF0"></stop>
+        </linearGradient>
+        <linearGradient id="linear3" x1="0.3" y1="0.3" x2=".7" y2=".7" spreadMethod="reflect">
+            <stop offset="0" stop-color="#00F"></stop>
+            <stop offset="1" stop-color="#FF0"></stop>
+        </linearGradient>
+    </defs>
+    <rect x="10" y="10" height="100" width="100" fill="url(#linear)" stroke="none"></rect>
+    <rect x="120" y="10" height="100" width="100" fill="url(#linear2)" stroke="none"></rect>
+    <rect x="230" y="10" height="100" width="100" fill="url(#linear3)" stroke="none"></rect>
+</svg>
+</body>
+</html>

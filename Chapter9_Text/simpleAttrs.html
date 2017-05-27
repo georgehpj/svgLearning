@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        text{
+            font-weight: bold;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+<svg>
+    <g id="coordinates" stroke="black" stroke-width="1">
+        <path d="M10 0v90m0 -60h200m-200 30h200m-200 30h200"></path>
+    </g>
+    <g id="text">
+        <text x="10" y="30">First Line</text>
+        <text x="10" y="60" stroke="black">Second Line</text>
+        <text x="10" y="90" stroke="blue" fill="none" stroke-width=".5">Third Line</text>
+    </g>
+</svg>
+<svg>
+    <g style="font-size: 14pt;">
+        <path d="M 100 10 100 100" style="stroke: gray; fill: none;"/>
+        <text x="100" y="30" style="text-anchor: start">Start</text>
+        <text x="100" y="60" style="text-anchor: middle">Middle</text>
+        <text x="100" y="90" style="text-anchor: end" rotate="45">End</text>
+    </g>
+</svg>
+</body>
+</html>
